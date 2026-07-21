@@ -1,5 +1,9 @@
-pref-title = Addon Template Example
-pref-enable =
-    .label = Enable
-pref-input = Input
-pref-help = { $name } Build { $version } { $time }
+pref-title = AI Reading Settings
+pref-webhook-url = Webhook URL
+pref-webhook-token = Webhook Token
+pref-request-timeout = Request timeout (seconds)
+pref-use-abstract-fallback =
+    .label = Use abstract when full text is unavailable
+pref-template = Template identifier
+pref-language = Output language
+pref-subfolder = n8n output subfolder

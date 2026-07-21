@@ -7,8 +7,13 @@
 declare namespace _ZoteroTypes {
   interface Prefs {
     PluginPrefsMap: {
-      "enable": boolean;
-      "input": string;
+      "webhookURL": string;
+      "webhookToken": string;
+      "requestTimeoutSeconds": number;
+      "useAbstractFallback": boolean;
+      "template": string;
+      "language": string;
+      "subfolder": string;
     };
   }
 }

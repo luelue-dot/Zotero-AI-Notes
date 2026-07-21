@@ -1,7 +1,6 @@
 import { config } from "../package.json";
-import { ColumnOptions, DialogHelper } from "zotero-plugin-toolkit";
+import type { DialogHelper } from "zotero-plugin-toolkit";
 import hooks from "./hooks";
-import { createZToolkit } from "./utils/ztoolkit";
 
 class Addon {
   public data: {
@@ -10,14 +9,9 @@ class Addon {
     // Env type, see build.js
     env: "development" | "production";
     initialized?: boolean;
-    ztoolkit: ZToolkit;
+    startupErrors: string[];
     locale?: {
       current: any;
-    };
-    prefs?: {
-      window: Window;
-      columns: Array<ColumnOptions>;
-      rows: Array<{ [dataKey: string]: string }>;
     };
     dialog?: DialogHelper;
   };
@@ -32,7 +26,7 @@ class Addon {
       config,
       env: __env__,
       initialized: false,
-      ztoolkit: createZToolkit(),
+      startupErrors: [],
     };
     this.hooks = hooks;
     this.api = {};

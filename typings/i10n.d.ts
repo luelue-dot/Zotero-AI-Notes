@@ -3,6 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 export type FluentMessageId =
+  | 'ai-reading-menu-command'
   | 'item-info-row-example-label'
   | 'item-section-example1-head-text'
   | 'item-section-example1-sidenav-tooltip'
@@ -13,14 +14,12 @@ export type FluentMessageId =
   | 'menuitem-label'
   | 'menuitem-submenulabel'
   | 'menupopup-label'
-  | 'pref-enable'
-  | 'pref-help'
-  | 'pref-input'
+  | 'pref-language'
+  | 'pref-request-timeout'
+  | 'pref-subfolder'
+  | 'pref-template'
   | 'pref-title'
-  | 'prefs-table-detail'
-  | 'prefs-table-title'
-  | 'prefs-title'
-  | 'startup-begin'
-  | 'startup-finish'
-  | 'tabpanel-lib-tab-label'
-  | 'tabpanel-reader-tab-label';
+  | 'pref-use-abstract-fallback'
+  | 'pref-webhook-token'
+  | 'pref-webhook-url'
+  | 'prefs-title';

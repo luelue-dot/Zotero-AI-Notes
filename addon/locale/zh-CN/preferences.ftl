@@ -1,5 +1,9 @@
-pref-title = 插件模板设置示例
-pref-enable =
-    .label = 开启
-pref-input = 输入
-pref-help = { $name } Build { $version } { $time }
+pref-title = AI 精读设置
+pref-webhook-url = Webhook URL
+pref-webhook-token = Webhook Token
+pref-request-timeout = 请求超时（秒）
+pref-use-abstract-fallback =
+    .label = 全文失败时使用摘要
+pref-template = 模板标识
+pref-language = 输出语言
+pref-subfolder = n8n 输出子目录
