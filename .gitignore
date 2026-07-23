@@ -1,3 +1,4 @@
+tradeoff.md
 # dot files
 .DS_Store
 
@@ -8,6 +9,7 @@ yarn.lock
 
 # TSC
 tsconfig.tsbuildinfo
+
 
 # Scaffold
 .env
